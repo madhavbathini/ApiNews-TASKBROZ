@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title id="style">Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content color="dark">
+  <ion-card color="dark" class="ion-margin-bottom">
+    <ion-card-header>
+      <img id="imageradius" [src]="article?.urlToImage">
+      <p>Author:-{{article?.author}}</p>
+      <h3>{{article?.title}}</h3>
+    </ion-card-header>
+  </ion-card>
+</ion-content>

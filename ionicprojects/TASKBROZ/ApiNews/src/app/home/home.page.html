@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title id="font-style">
+      News For You!
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content id="bgimage">
+  <ion-item color="dark">
+    <ion-input [(ngModel)]='dataItems' id="font" placeholder='Search For News.....'></ion-input>
+  </ion-item>
+  <ion-button expand='block' color="dark" class="style" (click)='search()'><span
+      style="font-family: Monospace;">Search</span></ion-button>
+  <ion-card color="dark" *ngFor='let item of storedData'>
+    <ion-card-header>
+      <img id="imageradius" [src]="item.urlToImage">
+      <p class="style">Author:-{{item.author}}</p>
+      <h3 class="style">{{item.title}}</h3>
+      <ion-button id="button" color="danger" (click)="singlePage(item)">Read More...</ion-button>
+    </ion-card-header>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "ApiNews",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
